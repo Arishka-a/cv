@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML study">
+    <meta name="author" content="Arina">
+
+    <title>HTML studying</title>
+
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <h1>Вахрушева Арина</h1>
+
+        <p>Начинающий <strong>frontend</strong> разработчик</p>
+
+        <nav>
+            <ul>
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#scills">Навыки</a></li>
+                <li><a href="#experience">Опыт</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+    
+    <main>
+        <section id="about">
+            <h2>Обо мне</h2>
+
+            <figure>
+                <img src="img/my_photo.png" alt="my_photo" width="200" loading="lazy">
+                <figcaption>Моя визитная фотка</figcaption>
+            </figure>
+
+            <p>
+                Привет! Меня зовут <em>Арина</em>, мне 22 года<br>
+                Я усусь в 
+                <abbr title="Пермский национальный исследовательский политехнический университет"> ПНИПУ</abbr>
+                и увлекаюсь веб разработкой
+            </p>
+
+            <p>
+                Моя цель стать профессиональным frontend разработчиком
+                Сейчас я изучаю <b>HTMK</b>, <b>CSS</b> и <b>Java Script</b>
+            </p>
+
+        </section>
+
+        <hr>
+
+        <section id="scills">
+
+            <h2>Навыки</h2>
+            <dl>
+                <dt>HTML</dt>
+                <dd>язык разметки - скелет любой веб-страницы</dd>
+
+                <dt>CSS</dt>
+                <dd>язык стилей - отвечает за внешний вид</dd>
+
+                <dt>Java Script</dt>
+                <dd>язык программирования - добавляет интерактивность</dd>
+            </dl>
+
+            <h3>Прогресс обучения</h3>
+            <div>
+                <label for="html-progress">HTML:</label>
+                <progress id="html-progress" value="80" max="100"></progress>
+
+                <br>
+
+                <label for="html-progress">CSS:</label>
+                <progress id="html-progress" value="30" max="100"></progress>
+
+                <br>
+
+                <label for="html-progress">JS:</label>
+                <progress id="html-progress" value="10" max="100"></progress>
+            </div>         
+
+        </section>
+
+        <hr>
+
+        <section id="experince">
+            <table border="2">
+                <thead>
+                    <tr>
+                        <th>Компания</th>
+                        <th>Должность</th>
+                        <th>Период</th>
+                        <th>Описание</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>СберМаркет</td>
+                        <td>Курьер</td>
+                        <td><time datetime="20223">2023</time></td>
+                        <td>Доставка продуктов клиентам</td>
+                    </tr>
+                    <tr>
+                        <td>ЭР-1</td>
+                        <td>Кампейнер</td>
+                        <td><time datetime="2025">2025</time></td>
+                        <td>Работа с рекламными кампаниями</td>
+                    </tr>                 
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="4">
+                            Общий стаж 2 года
+                        </td>
+                    </tr>
+                </tfoot>
+
+            </table>
+        </section>
+
+        <section id="contacts">
+            <h1>Связяться со мной</h1>
+            <address>
+                Email: <a href="mailto:arinavahr04@gmail.com">arinavahr04@gmail.com</a><br>
+                Телефон: <a href="tel:+79082781898">+79082781898</a><br>
+                ВК: <a href="https://vk.com/arr125" target="_blank" rel="noopener noreferrer">arr125</a>
+            </address>
+
+            <h3>Форма обратной связи</h3>
+            <form action="/submit" method="post">
+                <fieldset>
+                    <legend>Личные данные</legend>
+
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name"  name="name" placeholder="Введите имя" required><br><br>
+
+                    <label for="email">Ваша почта:</label>
+                    <input type="email" id="email" name="email" placeholder="Ваша почта"><br><br>
+
+                    <label for="phone">Ваш номер телефона:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+7" pattern="\+7\d{10}"><br><br>
+
+                    <label for="age">Ваш возраст:</label>
+                    <input type="number" id="age" name="age" placeholder="Ваш возраст"><br><br>
+
+                    <label for="birthday">Дата рождения:</label>
+                    <input type="date" id="birthday" name="birthday">
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Сообщение</legend>                 
+                    <label for="subject">Тема:</label>
+                    <select name="subject" id="subject">
+                        <option value="" selected>Выберите тему</option>
+
+                        <optgroup label="Работа">
+                            <option value="job">Предложение работы</option>
+                            <option value="project">Совместный проект</option>
+                        </optgroup>
+
+                        <optgroup label="Обучение">
+                            <option value="mentor">Менторство</option>
+                            <option value="course">Вопрос по курсам</option>
+                        </optgroup>
+                    </select>
+
+                    <br><br>
+
+                    <label for="message">Текст сообщения:</label>
+                    <textarea name="message" id="vessage" rows="5" cols="40" placeholder="Напишите сообщение"></textarea>
+
+                    <br><br>
+
+                    <label for="file">Прикрепить файл:</label>   
+                    <input type="file" id="file" name="file" multiple>                
+                    
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Дополнительно</legend>
+
+                    <p>Как вы обо мне узнали?</p>
+
+                    <input type="radio" id="src_vk" name="source" value="vk">
+                    <label for="src_vk">ВКонтакте</label>
+
+                    <input type="radio" id="src_friend" name="sourse" value="friend">
+                    <label for="src_friend">От друзей</label>
+
+                    <input type="radio" id="src_search" name="source" value="search">
+                    <label for="src_search">Поиск</label>
+
+                    <br><br>
+
+                    <p>Интересующие темы:</p>
+
+                    <input type="checkbox" id="topic_html" name="topics" value="html">
+                    <label for="topic_html">HTML</label>
+
+                    <input type="checkbox" id="topic_css" name="topics" value="css">
+                    <label for="topic_css">CSS</label>
+
+                    <input type="checkbox" id="topic_js" name="topics" value="js">
+                    <label for="topic_js">JavaScript</label>
+
+                    <br><br>
+
+                    <label for="rating">Оценка сайта:</label>
+                    <input type="range" id="rating" name="rating" min="1" max="10">
+
+                    <br><br>
+
+                    <label for="fav_color">Ваш любимый цвет:</label>
+                    <input type="color" id="fav_color" name="fav_color" value="black">
+
+                    <br><br>
+
+                    <label for="city">Ваш город:</label>
+                    <input type="text" id="city" name="city" list="cities">
+                    <datalist id="cities">
+                        <option value="Москва"></option>
+                        <option value="Пермь"></option>
+                        <option value="Санкт-Петербург"></option>
+                    </datalist>
+
+                </fieldset>
+
+                <br>
+
+                <button type="submit">Отправить</button>
+                <button type="reset">Очистить</button>
+ 
+            </form>
+        </section>
+
+        <hr>
+
+        <article>
+            <h2>Мой путь в IT</h2>
+
+            <p>
+                Я начала учить HTML в <time datetime="2025-06"> июне 2025 года</time><br>
+                Сначала было сложно, но <i>frontend</i> оказался увлекательным.
+            </p>
+
+            <p>
+                Ресурсы для обучения:
+            </p>
+            <ol type="1">
+                <li>
+                    <a href="https://developer.mozilla.org" target="_blank" rel="noopener noreferre" title="Лучшая документация">MDN Web Docs</a>
+                </li>
+                <li>
+                    <a href="courses.html" download>Скачать список курсов</a>
+                </li>
+            </ol>
+        </article>
+    </main>
+
+    <footer>
+        <p>
+            <small>&copy; 2026 Вахрушева Арина</small>
+        </p>
+
+        <p>
+            <a href="#about">Наверх</a>
+        </p>
+    </footer>
+</body>
+</html>
